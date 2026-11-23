@@ -43,6 +43,22 @@ necesariamente un colapso real de la producción.
 > registro puede verse como un "quiebre estructural" si no se distingue el dato
 > de la producción.
 
+### El contraste por estado confirma el cambio de cobertura
+
+Separando la acuacultura dulce por entidad, el "colapso" **no es uniforme**:
+
+- **5 estados NO cayeron** (incluso crecieron): Yucatán **+132%**, Baja California
+  **+101%**, Quintana Roo **+32%**, Baja California Sur **−1%**, Nayarit **−8%**.
+  Son estados **costeros con agencias acuícolas propias** que siguieron reportando.
+- **El resto cayó −24% a −99%**: México −99%, San Luis Potosí −97%, Guanajuato −94%,
+  Puebla −89%, Zacatecas −88%, Tlaxcala −84%, Michoacán −75%, Jalisco −72%… en su
+  mayoría estados **sin litoral**, cuya acuacultura interior quedó sin reporte
+  federal en 2018.
+
+Un colapso real de producción sería homogéneo entre estados; este contraste tan
+marcado es la firma de un **cambio de cobertura estadística**, no de una caída
+productiva.
+
 ---
 
 ## 3. Especies y estados

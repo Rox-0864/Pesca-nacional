@@ -82,6 +82,26 @@ st.info("**La caída del −54% es solo en acuacultura DULCE (interior)**, justo
 
 st.markdown("---")
 
+# 2b. Contraste por estado
+st.header("2b · El contraste por estado (¿todos cayeron?)")
+est_df = pd.read_csv("data/acuacultura_dulce_estado.csv").sort_values("cambio_pct")
+colores = ["#2ca02c" if c > -15 else "#d62728" for c in est_df["cambio_pct"]]
+fig_est = go.Figure(go.Bar(y=est_df["estado"], x=est_df["cambio_pct"], orientation="h",
+                           marker_color=colores))
+fig_est.add_vline(x=0, line_color="gray", line_width=1)
+fig_est.add_vline(x=-15, line_color="gray", line_width=1, line_dash="dot")
+fig_est.update_layout(height=640, margin=dict(l=0, r=0, t=10, b=0),
+                      xaxis_title="Cambio % (2014-18 → 2019-24)")
+st.plotly_chart(fig_est, use_container_width=True)
+st.success("**5 estados NO cayeron** (verde): Yucatán +132%, Baja California +101%, Quintana Roo +32%, "
+           "Baja California Sur −1%, Nayarit −8%. Son estados **costeros con agencias acuícolas propias** "
+           "que siguieron reportando sin hueco. El resto (−24% a −99%, en rojo) son mayormente estados "
+           "**sin litoral**, cuya acuacultura interior quedó huérfana de reporte federal en 2018. "
+           "Un colapso real sería uniforme; este contraste es la firma de un **cambio de cobertura "
+           "estadística**, no de producción.")
+
+st.markdown("---")
+
 # 3. Top especies y estados
 st.header("3 · Especies y estados")
 colA, colB = st.columns(2)
